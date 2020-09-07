@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>typescript-demo-lib</title>
+	<title>&quot;bin/typescript-demo-lib&quot; | typescript-demo-lib</title>
 	<meta name="description" content="Documentation for typescript-demo-lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">typescript-demo-lib</a>
+					<a href="../index.html" class="title">typescript-demo-lib</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -53,60 +53,75 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_bin_typescript_demo_lib_.html">&quot;bin/typescript-demo-lib&quot;</a>
 				</li>
 			</ul>
-			<h1>typescript-demo-lib</h1>
+			<h1>Module &quot;bin/typescript-demo-lib&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#typescript-demo-lib" id="typescript-demo-lib" style="color: inherit; text-decoration: none;">
-					<h1>TypeScript-Demo-LIb</h1>
-				</a>
-				<p><a href="https://gitlab.com/MatrixAI/open-source/TypeScript-Demo-Lib/commits/master"><img src="https://gitlab.com/MatrixAI/open-source/TypeScript-Demo-Lib/badges/master/pipeline.svg" alt="pipeline status"></a></p>
-				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-					<h2>Installation</h2>
-				</a>
-				<p>Note that JavaScript libraries are not packaged in Nix. Only JavaScript applications are.</p>
-				<p>Building the package:</p>
-				<pre><code class="language-sh">nix-build -E <span class="hljs-string">&#x27;(import ./pkgs.nix).callPackage ./default.nix {}&#x27;</span></code></pre>
-				<p>Building the releases:</p>
-				<pre><code class="language-sh">nix-build ./release.nix --attr application
-nix-build ./release.nix --attr docker</code></pre>
-				<p>Install into Nix user profile:</p>
-				<pre><code class="language-sh">nix-env -f ./release.nix --install --attr application</code></pre>
-				<p>Install into Docker:</p>
-				<pre><code class="language-sh">docker load --input <span class="hljs-string">&quot;<span class="hljs-subst">$(nix-build ./release.nix --attr docker)</span>&quot;</span></code></pre>
-				<a href="#path-aliases" id="path-aliases" style="color: inherit; text-decoration: none;">
-					<h2>Path Aliases</h2>
-				</a>
-				<p>Due to <a href="https://github.com/microsoft/TypeScript/issues/10866">https://github.com/microsoft/TypeScript/issues/10866</a>, you cannot use path aliases without a bundler like Webpack to further transform the generated JavaScript code in order to resolve the path aliases. Because this is a simple library demonstrate, there&#39;s no need to use a bundler. In fact, for such libraries, it is far more efficient to not bundle the code.</p>
-				<p>However we have left the path alias configuration in <code>tsconfig.json</code>, <code>jest.config.json</code> and in the tests we are making use of the <code>@typescript-demo-lib</code> alias.</p>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_bin_typescript_demo_lib_.html#main" class="tsd-kind-icon">main</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="main" class="tsd-anchor"></a>
+					<h3>main</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">main<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MatrixAI/TypeScript-Demo-Lib/blob/fa41626/src/bin/typescript-demo-lib.ts#L6">bin/typescript-demo-lib.ts:6</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="_bin_typescript_demo_lib_.html">&quot;bin/typescript-<wbr>demo-<wbr>lib&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_bin_typescript_demo_lib_.html">&quot;bin/typescript-<wbr>demo-<wbr>lib&quot;</a>
+						<a href="_index_.html">&quot;index&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_index_.html">&quot;index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_lib_library_.html">&quot;lib/<wbr>Library&quot;</a>
+						<a href="_lib_library_.html">&quot;lib/<wbr>Library&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_bin_typescript_demo_lib_.html#main" class="tsd-kind-icon">main</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -129,6 +144,6 @@ nix-build ./release.nix --attr docker</code></pre>
 	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

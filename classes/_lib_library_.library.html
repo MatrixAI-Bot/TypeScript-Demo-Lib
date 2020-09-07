@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Library</title>
-	<meta name="description" content="Documentation for Library">
+	<title>Library | typescript-demo-lib</title>
+	<meta name="description" content="Documentation for typescript-demo-lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Library</a>
+					<a href="../index.html" class="title">typescript-demo-lib</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -38,6 +38,10 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -52,7 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="library.html">Library</a>
+					<a href="../modules/_lib_library_.html">&quot;lib/Library&quot;</a>
+				</li>
+				<li>
+					<a href="_lib_library_.library.html">Library</a>
 				</li>
 			</ul>
 			<h1>Class Library</h1>
@@ -77,13 +84,13 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="library.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_lib_library_.library.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="library.html#someparam" class="tsd-kind-icon">some<wbr>Param</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_lib_library_.library.html#someparam" class="tsd-kind-icon">some<wbr>Param</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,13 +102,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Library<span class="tsd-signature-symbol">(</span>someParam<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="library.html" class="tsd-signature-type">Library</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Library<span class="tsd-signature-symbol">(</span>someParam<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_library_.library.html" class="tsd-signature-type">Library</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MatrixAI/TypeScript-Demo-Lib/blob/fdf2ef5/src/lib/Library.ts#L2">lib/Library.ts:2</a></li>
+									<li>Defined in <a href="https://github.com/MatrixAI/TypeScript-Demo-Lib/blob/fa41626/src/lib/Library.ts#L2">lib/Library.ts:2</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -110,7 +117,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> someParam: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Parameter&quot;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="library.html" class="tsd-signature-type">Library</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_library_.library.html" class="tsd-signature-type">Library</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -123,7 +130,7 @@
 					<div class="tsd-signature tsd-kind-icon">some<wbr>Param<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MatrixAI/TypeScript-Demo-Lib/blob/fdf2ef5/src/lib/Library.ts#L2">lib/Library.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/MatrixAI/TypeScript-Demo-Lib/blob/fa41626/src/lib/Library.ts#L2">lib/Library.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -135,28 +142,34 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_bin_typescript_demo_lib_.html">&quot;bin/typescript-<wbr>demo-<wbr>lib&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_lib_library_.html">&quot;lib/<wbr>Library&quot;</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class">
-						<a href="library.html" class="tsd-kind-icon">Library</a>
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_lib_library_.library.html" class="tsd-kind-icon">Library</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="library.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_lib_library_.library.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="library.html#someparam" class="tsd-kind-icon">some<wbr>Param</a>
+								<a href="_lib_library_.library.html#someparam" class="tsd-kind-icon">some<wbr>Param</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function">
-						<a href="../globals.html#main" class="tsd-kind-icon">main</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -167,8 +180,12 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 		</div>
 	</div>
