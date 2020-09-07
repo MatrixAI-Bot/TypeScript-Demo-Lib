@@ -65,7 +65,7 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<a href="#typescript-demo-lib" id="typescript-demo-lib" style="color: inherit; text-decoration: none;">
-					<h1>TypeScript-Demo-LIb</h1>
+					<h1>TypeScript-Demo-Lib</h1>
 				</a>
 				<p><a href="https://gitlab.com/MatrixAI/open-source/TypeScript-Demo-Lib/commits/master"><img src="https://gitlab.com/MatrixAI/open-source/TypeScript-Demo-Lib/badges/master/pipeline.svg" alt="pipeline status"></a></p>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
@@ -81,8 +81,24 @@ nix-build ./release.nix --attr docker</code></pre>
 				<pre><code class="language-sh">nix-env -f ./release.nix --install --attr application</code></pre>
 				<p>Install into Docker:</p>
 				<pre><code class="language-sh">docker load --input <span class="hljs-string">&quot;<span class="hljs-subst">$(nix-build ./release.nix --attr docker)</span>&quot;</span></code></pre>
+				<a href="#development" id="development" style="color: inherit; text-decoration: none;">
+					<h2>Development</h2>
+				</a>
+				<p>Run <code>nix-shell</code>, and once you&#39;re inside, you can use:</p>
+				<pre><code class="language-sh"><span class="hljs-comment"># install (or reinstall packages from package.json)</span>
+npm install
+<span class="hljs-comment"># build the dist</span>
+npm run build
+<span class="hljs-comment"># run the repl (this allows you to import from ./src)</span>
+npm run ts-node
+<span class="hljs-comment"># run the tests</span>
+npm run <span class="hljs-built_in">test</span>
+<span class="hljs-comment"># lint the source code</span>
+npm run lint
+<span class="hljs-comment"># automatically fix the source</span>
+npm run lintfix</code></pre>
 				<a href="#path-aliases" id="path-aliases" style="color: inherit; text-decoration: none;">
-					<h2>Path Aliases</h2>
+					<h3>Path Aliases</h3>
 				</a>
 				<p>Due to <a href="https://github.com/microsoft/TypeScript/issues/10866">https://github.com/microsoft/TypeScript/issues/10866</a>, you cannot use path aliases without a bundler like Webpack to further transform the generated JavaScript code in order to resolve the path aliases. Because this is a simple library demonstrate, there&#39;s no need to use a bundler. In fact, for such libraries, it is far more efficient to not bundle the code.</p>
 				<p>However we have left the path alias configuration in <code>tsconfig.json</code>, <code>jest.config.json</code> and in the tests we are making use of the <code>@typescript-demo-lib</code> alias.</p>
